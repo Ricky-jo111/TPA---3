@@ -39,11 +39,21 @@ function showMovies(data) {
     deleteAllMovies();
     data.forEach((item, index) => {
         listMovie.innerHTML +=
-            `<div class="card">
-                <img src="${img}/${item.poster_path}" alt="${item.title}" width="300"/>
-                <p>${item.title}</p>
-            
-        </div>`
+            `<div class="card" style="width: 18rem; height:39rem">
+            <img src="${img}/${item.poster_path}" style="height:30rem" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="flex">
+                <div class="card-title" style="font-size:15px;">${item.original_title}</div>
+                <div>${item.vote_average}</div>
+                </div> 
+                <br>
+                <a>${item.release_date}</a>
+                <br>   
+                <br>   
+                <a href="#" class="btn btn-primary">Book ticket Now</a>
+            </div>
+           
+          </div>`
         
 
     })

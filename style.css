@@ -1,6 +1,6 @@
 .content{
     margin: 100px auto;
-    border: 1px solid;
+    text-align: center;
 }
 .Search {
     
@@ -9,9 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     margin: 30px auto;
 }
 .Search input{
+    border-radius: 10px;
+    background-color: azure;
     text-align: center;
     width: 100%;
     height: 40px;
@@ -28,4 +31,11 @@
 .card {
     margin: 5px;
     border: 1px solid;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body a {
+    margin-left: 1px;
 }
